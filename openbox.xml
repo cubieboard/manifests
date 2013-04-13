@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote  name="github" fetch="https://github.com/cubiegroup/" />
+    <remote  name="github" fetch="https://github.com/cubieboard/" />
     <default revision="openbox" remote="github" sync-j="4" />
 
     <project name="openbox_abi_cpp" path="abi/cpp" />
