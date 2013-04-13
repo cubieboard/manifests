@@ -1,15 +1,14 @@
 manifests
 =========
 
-Cubieboard's android source code is maintained using git/repo tools. If you want to build android for cubieboard, you at least need to know to use git and android repo
-(just some basic commands will be okay). Also the recommended building environment is ubuntu 12.04(x86_64). You can reference to <a href="http://source.android.com/source/initializing.html">Setting up a Linux build environment</a>
+Cubieboard's android source code is maintained by git/repo tools. If you want to build android for cubieboard, you at least need to know how to use git and android repo (just some basic commands will be okay). Also the recommended building environment is ubuntu 12.04(x86_64). You can reference to <a href="http://source.android.com/source/initializing.html">Setting up a Linux build environment</a>
 
 #Instruction to build openbox system for cubieboard  
-openbox is based on ics-4.0.4, and with XBMC integrated, which is suitable for product or normal user
+openbox is based on ics-4.0.4, and with XBMC integrated.
 
-## (1) Get all source code from github/cubiegroup
+## (1) Get all source code from github/cubieboard
     $mkdir openbox && cd openbox
-    $repo init -u https://github.com/cubiegroup/manifests.git -b cb -m openbox.xml  
+    $repo init -u https://github.com/cubieboard/manifests.git -b cb -m openbox.xml  
     $repo sync
 
 ## (2) Building
@@ -27,7 +26,7 @@ openbox is based on ics-4.0.4, and with XBMC integrated, which is suitable for p
 
 ## (1) Get all source code from github/jellybean
     $mkdir openbox && cd openbox
-    $repo init -u https://github.com/cubiegroup/manifests.git -b cb -m jb.xml  
+    $repo init -u https://github.com/cubieboard/manifests.git -b cb -m jb.xml  
     $repo sync
 
 ## (2) Building
@@ -43,13 +42,3 @@ openbox is based on ics-4.0.4, and with XBMC integrated, which is suitable for p
 ## Known issue
     a)emac is not supported yet
     b)sata is not tested
-    c)line-out is disable
-    d)This version of not suitable for normal user
-
-
-
-
-
-
-
-
