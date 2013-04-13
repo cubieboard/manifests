@@ -7,8 +7,10 @@ Cubieboard's android source code is maintained by git/repo tools. If you want to
 openbox is based on ics-4.0.4, and with XBMC integrated.
 
 ## (1) Get all source code from github/cubieboard
+    $curl https://raw.github.com/cubieboard/git-repo/stable/repo > ~/bin/repo
+    $chmod +x ~/bin/repo
     $mkdir openbox && cd openbox
-    $repo init -u https://github.com/cubieboard/manifests.git -b cb -m openbox.xml  
+    $repo init --no-repo-verify -u git://github.com/cubieboard/manifests -b cb -m openbox.xml  
     $repo sync
 
 ## (2) Building
@@ -26,7 +28,7 @@ openbox is based on ics-4.0.4, and with XBMC integrated.
 
 ## (1) Get all source code from github/jellybean
     $mkdir openbox && cd openbox
-    $repo init -u https://github.com/cubieboard/manifests.git -b cb -m jb.xml  
+    $repo init --no-repo-verify -u git://github.com/cubieboard/manifests -b cb -m jb.xml  
     $repo sync
 
 ## (2) Building
