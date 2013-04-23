@@ -27,6 +27,8 @@ openbox is based on ics-4.0.4, and with XBMC integrated.
 #Instruction to build jellybean for cubieboard
 
 ## (1) Get all source code from github/jellybean
+    $curl https://raw.github.com/cubieboard/git-repo/stable/repo > ~/bin/repo
+    $chmod +x ~/bin/repo
     $mkdir openbox && cd openbox
     $repo init --no-repo-verify -u git://github.com/cubieboard/manifests -b cb -m jb.xml  
     $repo sync
